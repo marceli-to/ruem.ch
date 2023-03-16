@@ -1,0 +1,31 @@
+.span-1 {
+  @apply col-span-2 xl:col-span-1
+}
+
+.span-2 {
+  @apply md:col-span-2
+}
+
+.span-3 {
+  @apply md:col-span-3
+}
+
+.span-4 {
+  @apply md:col-span-4
+}
+
+.span-5 {
+  @apply md:col-span-5
+}
+
+.span-6 {
+  @apply md:col-span-6
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-rtl figcaption {
+  direction: ltr;
+}

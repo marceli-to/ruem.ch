@@ -1,0 +1,23 @@
+{{ content }}
+  {{ if type == "image" }}
+    <figure class="span-{{ columns }} mt-24 md:mt-0">
+      {{ if link }}
+        <a href="{{ link }}" target="{{ target }}">
+          {{ partial:content/image :image="image" :caption="image:alt" }}
+          {{ if caption }}
+            <figcaption class="text-right pt-18">
+              {{ caption | nl2br }}
+            </figcaption>
+          {{ /if }}        
+        </a>
+      {{ else }}
+        {{ partial:content/image :image="image" :caption="image:alt" }}
+        {{ if caption }}
+          <figcaption class="text-right pt-18">
+            {{ caption | nl2br }}
+          </figcaption>
+        {{ /if }}
+      {{ /if }}
+    </figure>
+  {{ /if }}
+{{ /content }}

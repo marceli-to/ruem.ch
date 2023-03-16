@@ -1,0 +1,25 @@
+title: Columns
+fields:
+  -
+    handle: columns
+    field:
+      options:
+        1: null
+        2: null
+        3: null
+        4: null
+        5: null
+        6: null
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Columns
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      default: '1'
