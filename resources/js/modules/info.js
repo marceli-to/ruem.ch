@@ -34,7 +34,7 @@
     // if info does not have class hidden, show the hide icon and hide the show icon
     const iconShow = document.querySelector(selectors.iconShow);
     const iconHide = document.querySelector(selectors.iconHide);
-    if (info.classList.contains(classes.hidden)) {
+    if (content.classList.contains(classes.hidden)) {
       iconShow.classList.remove(classes.hidden);
       iconHide.classList.add(classes.hidden);
     } 
