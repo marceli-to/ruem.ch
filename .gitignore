@@ -3,7 +3,7 @@
 /public/storage
 /public/vendor/statamic
 /public/.htaccess
-/public/assets
+
 /storage/*.key
 /vendor
 .env
@@ -18,3 +18,4 @@ yarn-error.log
 
 INSTALL.txt
 #/content
+#/public/assets
