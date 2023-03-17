@@ -1,6 +1,11 @@
-<nav class="menu md:col-span-1 sticky top-18 xl:top-36">
-  <ul class="w-full border-t border-black">
-    {{ nav:collection:pages sort="order" }}
+<nav class="mt-20">
+  <ul>
+    {{ nav:collection:projects sort="order" }}
+      {{ partial:menu/main-item :text="title" :url="url" target="_self" }}
+    {{ /nav:collection:projects }}
+  </ul>
+  <ul class="mt-20">
+    {{ nav:collection:pages sort="order" include_home="true" }}
       {{ partial:menu/main-item :text="title" :url="url" target="_self" }}
     {{ /nav:collection:pages }}
   </ul>
