@@ -1,0 +1,23 @@
+title: 'Maximum width'
+fields:
+  -
+    handle: maximum_width
+    field:
+      options:
+        50: 50%
+        75: 75%
+        100: 100%
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Maximum width'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      instructions: 'For mobile screens only'
+      default: '100'

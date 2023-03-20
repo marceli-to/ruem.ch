@@ -1,5 +1,10 @@
+/* selector for classes starting with "span-" */
+/* [class^="span-"] {
+  @apply bg-green-100
+} */
+
 .span-1 {
-  @apply col-span-2 xl:col-span-1
+  @apply md:col-span-1
 }
 
 .span-2 {
@@ -28,4 +33,16 @@
 
 .direction-rtl figcaption {
   direction: ltr;
+}
+
+.max-width-100 {
+ @apply max-w-[100%] md:max-w-none
+}
+
+.max-width-75 {
+  @apply max-w-[75%] md:max-w-none
+}
+
+.max-width-50 {
+  @apply max-w-[50%] md:max-w-none
 }

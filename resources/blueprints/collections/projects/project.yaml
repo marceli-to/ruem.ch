@@ -80,6 +80,8 @@ sections:
                 -
                   import: columns
                 -
+                  import: maximum_width
+                -
                   handle: caption
                   field:
                     antlers: false

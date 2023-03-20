@@ -1,6 +1,6 @@
-<section class="fixed left-0 top-0 pl-20 pt-20" data-info-wrapper>
+<section class="fixed left-0 top-0 px-20 pt-20 md:px-50 md:pt-25" data-info-wrapper>
   {{ partial:icons/info-button }}
-  <div class="hidden sm:!block pt-50 pr-25 max-w-[320px] lg:max-w-[400px]" data-info-content>
+  <div class="hidden md:!block pt-45 md:pt-0 max-w-[440px]" data-info-content>
     {{ if content_text }}
       {{ partial:content/text :content="content_text" }}
     {{ /if }}
@@ -10,8 +10,8 @@
 </section>
 
 {{ if content_media }}
-  <section class="md:col-span-10 md:col-start-3">
-    <div class="md:grid md:grid-cols-6 md:gap-20 direction-rtl">
+  <section class="pt-80 pr-20 pb-40 pl-80 md:pl-200 lg:pl-[400px] md:pr-50">
+    <div class="md:grid md:grid-cols-3 md:gap-x-25 md:gap-y-50 xl:grid-cols-4 direction-rtl">
       {{ partial:content/media :content="content_media" }}
     </div>
   </section>

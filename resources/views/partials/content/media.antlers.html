@@ -1,11 +1,11 @@
 {{ content }}
   {{ if type == "image" }}
-    <figure class="span-{{ columns }} mt-24 md:mt-0">
+    <figure class="span-{{ columns }} mt-25 md:mt-0">
       {{ if link }}
         <a href="{{ link }}" target="{{ target }}">
-          {{ partial:content/image :image="image" :caption="image:alt" }}
+          {{ partial:content/image :image="image" :caption="image:alt" :maxWidth="maximum_width" }}
           {{ if caption }}
-            <figcaption class="text-right pt-18">
+            <figcaption class="text-right pt-18 pb-5 md:pb-0">
               {{ caption | nl2br }}
             </figcaption>
           {{ /if }}        
@@ -13,7 +13,7 @@
       {{ else }}
         {{ partial:content/image :image="image" :caption="image:alt" }}
         {{ if caption }}
-          <figcaption class="text-right pt-18">
+          <figcaption class="text-right pt-18 pb-5 md:pb-0">
             {{ caption | nl2br }}
           </figcaption>
         {{ /if }}
