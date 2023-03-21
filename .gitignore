@@ -17,5 +17,6 @@ yarn-error.log
 .DS_Store
 
 INSTALL.txt
-#/content
-#/public/assets
+/content
+/users
+/public/assets
