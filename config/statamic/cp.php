@@ -46,6 +46,12 @@ return [
           'width' => 50,
           'sort' => 'order'
         ],
+        [ 
+          'type' => 'collection',
+          'collection' => 'projects',
+          'limit' => 10,
+          'width' => 50
+        ],
     ],
 
     /*

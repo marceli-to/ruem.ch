@@ -1,4 +1,29 @@
-# admin:
-#   title: Administrator
-#   permissions:
-#     - super
+editor:
+  title: Editor
+  permissions:
+    - 'access cp'
+    - 'view pages entries'
+    - 'edit pages entries'
+    - 'create pages entries'
+    - 'delete pages entries'
+    - 'publish pages entries'
+    - 'reorder pages entries'
+    - 'edit other authors pages entries'
+    - 'publish other authors pages entries'
+    - 'delete other authors pages entries'
+    - 'view projects entries'
+    - 'edit projects entries'
+    - 'create projects entries'
+    - 'delete projects entries'
+    - 'publish projects entries'
+    - 'reorder projects entries'
+    - 'edit other authors projects entries'
+    - 'publish other authors projects entries'
+    - 'delete other authors projects entries'
+    - 'view assets assets'
+    - 'upload assets assets'
+    - 'edit assets assets'
+    - 'move assets assets'
+    - 'rename assets assets'
+    - 'delete assets assets'
+    - 'access cache utility'
