@@ -101,6 +101,7 @@ sections:
                     instructions_position: above
                     visibility: visible
                     width: 50
+                    container: assets
                 -
                   handle: target
                   field:
@@ -118,6 +119,23 @@ sections:
                     type: select
                     icon: select
                     width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+            video:
+              display: Video
+              fields:
+                -
+                  import: video
+                -
+                  import: columns
+                -
+                  handle: caption
+                  field:
+                    antlers: false
+                    display: Caption
+                    type: textarea
+                    icon: textarea
                     listable: hidden
                     instructions_position: above
                     visibility: visible
@@ -142,6 +160,7 @@ sections:
           visibility: visible
           buttons:
             - removeformat
+            - horizontalrule
   seo:
     display: SEO
     fields:

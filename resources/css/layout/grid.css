@@ -31,6 +31,10 @@
   direction: rtl;
 }
 
+.direction-ltr {
+  direction: ltr;
+}
+
 .direction-rtl figcaption {
   direction: ltr;
 }
