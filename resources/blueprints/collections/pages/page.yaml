@@ -11,6 +11,20 @@ sections:
           validate:
             - required
       -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          always_save: false
+          from: title
+          generate: true
+          validate:
+            - required
+            - 'unique_entry_value:{collection},{id},{site}'
+      -
         handle: content_text
         field:
           collapse: false
@@ -217,20 +231,6 @@ sections:
   settings:
     display: Settings
     fields:
-      -
-        handle: slug
-        field:
-          type: slug
-          localizable: true
-          instructions_position: above
-          listable: hidden
-          visibility: visible
-          always_save: false
-          from: title
-          generate: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:
