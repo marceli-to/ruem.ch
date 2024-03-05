@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ seo_title ?? title }} &bull; {{ site:name }}</title>
+<meta name="description" content="{{ seo_description }}">
+<meta property="og:title" content="{{ seo_title ?? site:name }}">
+<meta property="og:description" content="{{ seo_description }}">
+<meta property="og:url" content="{{ config:client:base_url }}">
+<meta property="og:image" content="{{ if seo_image }}{{ config:client:base_url }}{{ seo_image }}{{ else }}{{ config:client:base_url }}/img/ruem-og.jpg{{ /if }}">
+<meta property="og:site_name" content="{{ seo_title ?? site:name }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="csrf-token" content="RqiwoaZ7fhAKNssyf0W3dBGhX8o8GDDsrCOtHJHR" />
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="{{ mix src='css/app.css' }}">
+</head>
+<body class="relative antialiased bg-black text-white">
+  <main class="">
+    <section class="fixed left-0 top-0 px-20 pt-20 md:px-50 md:pt-25" data-info-wrapper>
+      {{ partial:icons/info-button }}
+      <div class="hidden md:!block pt-45 md:pt-0 max-w-[440px]" data-info-content>
+        {{ partial:menu/main }}
+      </div>
+      {{ partial:icons/logo }}
+    </section>
+    
+    <section class="pt-80 pr-20 pb-40 pl-80 md:pl-200 lg:pl-[400px] md:pr-50">
+      {{ if content_text }}
+        <div class="max-w-[640px] privacy">
+          {{ partial:content/text :content="content_text" }}
+        </div>
+      {{ /if }}
+    </section>
+  </main>
+</body>
+<script src="{{ mix src='/js/app.js' }}"></script>
+</html>
+

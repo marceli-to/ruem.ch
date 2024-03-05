@@ -9,3 +9,27 @@
 @import "layout/grid";
 @import "layout/content";
 @import "layout/info";
+
+.privacy h2,
+.privacy p,
+.privacy ul {
+  @apply mb-16;
+}
+.privacy p {
+  @apply mb-16;
+}
+
+.privacy ul p {
+  @apply inline;
+}
+.privacy ul {
+  @apply list-disc;
+}
+
+.privacy li {
+  @apply list-item ml-16;
+}
+
+.privacy a {
+  @apply underline underline-offset-4 decoration-1 hover:no-underline
+}
