@@ -27,3 +27,4 @@ editor:
     - 'rename assets assets'
     - 'delete assets assets'
     - 'access cache utility'
+    - 'access default site'
