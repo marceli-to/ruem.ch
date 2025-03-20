@@ -23,7 +23,7 @@ sections:
           generate: true
           validate:
             - required
-            - 'unique_entry_value:{collection},{id},{site}'
+            - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'
       -
         handle: content_text
         field:
